@@ -1,0 +1,74 @@
+{
+   "hero": {
+     "title": "Bring Your Vision to Life",
+     "subtitle": "Turn your vision into reality with our creative solutions",
+     "button": {
+       "text": "Get Started",
+       "url": "#"
+     },
+     "slider": {
+       "interval": 5000,
+       "images": [
+         {
+           "id": 1,
+           "src": "/images/veil-1.webp",
+           "alt": "Modern office space with creative team",
+           "caption": "Where innovation meets design"
+         },
+         {
+           "id": 2,
+           "src": "/images/veil-2.webp",
+           "alt": "Digital technology concept",
+           "caption": "Building the future, today"
+         },
+         {
+           "id": 3,
+           "src": "/images/veil-3.webp",
+           "alt": "Creative workspace",
+           "caption": "Transforming ideas into reality"
+         }
+       ]
+     }
+   },
+   "cards": [
+     {
+       "id": 1,
+       "image": {
+         "src": "/images/design.webp",
+         "alt": "Design"
+       },
+       "title": "Beautiful Design",
+       "description": "Create stunning experiences that capture attention and inspire action.",
+       "button": {
+         "text": "Learn More",
+         "url": "#"
+       }
+     },
+     {
+       "id": 2,
+       "image": {
+         "src": "/images/smartSolutions.webp",
+         "alt": "Development"
+       },
+       "title": "Smart Solutions",
+       "description": "Build powerful applications with modern technology and best practices.",
+       "button": {
+         "text": "Learn More",
+         "url": "#"
+       }
+     },
+     {
+       "id": 3,
+       "image": {
+         "src": "/images/strategy.webp",
+         "alt": "Strategy"
+       },
+       "title": "Strategic Growth",
+       "description": "Develop effective strategies to reach your business goals and expand.",
+       "button": {
+         "text": "Learn More",
+         "url": "#"
+       }
+     }
+   ]
+ }

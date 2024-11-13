@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .hero {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #f3f4f6;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(147, 51, 234, 0.1));
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      padding: 0 2rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(to right, #3b82f6, #9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      color: #4b5563;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #3b82f6, #9333ea);
+      color: white;
+      text-decoration: none;
+      border-radius: 9999px;
+      font-weight: 500;
+      transition: transform 0.2s;
+    }
+
+    .hero-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .cards-section {
+      max-width: 1200px;
+      margin: -100px auto 4rem;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .card-description {
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .card-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.25rem;
+      }
+
+      .cards-section {
+        margin-top: -50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Transform Your Vision</h1>
+      <p class="hero-subtitle">Creating beautiful digital experiences that inspire and engage your audience</p>
+      <a href="#" class="hero-button">Get Started</a>
+    </div>
+  </section>
+
+  <section class="cards-section">
+    <div class="cards-grid">
+      <div class="card">
+        <img src="/api/placeholder/400/200" alt="Design Process" class="card-image">
+        <div class="card-content">
+          <h3 class="card-title">Innovative Design</h3>
+          <p class="card-description">Our creative process combines aesthetic beauty with functional purpose to deliver memorable experiences.</p>
+          <a href="#" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/api/placeholder/400/200" alt="Development" class="card-image">
+        <div class="card-content">
+          <h3 class="card-title">Smart Development</h3>
+          <p class="card-description">Building robust solutions with cutting-edge technology to bring your ideas to life.</p>
+          <a href="#" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/api/placeholder/400/200" alt="Strategy" class="card-image">
+        <div class="card-content">
+          <h3 class="card-title">Growth Strategy</h3>
+          <p class="card-description">Strategic planning and execution to help your business reach its full potential.</p>
+          <a href="#" class="card-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
